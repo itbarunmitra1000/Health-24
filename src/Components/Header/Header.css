@@ -1,0 +1,6 @@
+.navbar{
+    color: white;
+}
+.navbar:hover{
+    color:tomato;
+}
