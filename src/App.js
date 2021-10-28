@@ -9,6 +9,8 @@ import Register from './Components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Patients from './Components/Patients/Patients';
+import Services from './Components/Services/Services';
+
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
           <Switch>
             <Route path='/home'>
               <Home></Home>
+            </Route>
+            <Route path='/services'>
+              <Services></Services>
             </Route>
             <PrivateRoute path='/patients'>
               <Patients></Patients>
