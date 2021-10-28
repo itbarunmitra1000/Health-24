@@ -21,7 +21,7 @@ const Header = () => {
                         <Nav.Link as={Link} className='text-light' to="/about#about">About Us</Nav.Link>
                         <Nav.Link as={Link} className='text-light' to="/contact#contact">Contact Us</Nav.Link>
                         <Navbar.Text>
-                            <span  >Hello {user.displayName} </span>
+                            <span  > {user.displayName} </span>
                         </Navbar.Text>
                         {user.email ?
                             <button onClick={logout} className='btn-dark' >Log Out</button>
@@ -38,6 +38,7 @@ const Header = () => {
 
                 </Container>
             </Navbar>
+        
         </>
     );
 };

@@ -1,11 +1,13 @@
 import React from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
     const { signInUsingGoogle } = useAuth();
+    
+
     return (
         <>
             <Container>
@@ -32,7 +34,7 @@ const Login = () => {
                     </Col>
                 </Row>
             </Container>
-        
+
         </>
 
 

@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header/Header';
-import Banner from './Components/Banner/Banner';
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
@@ -17,7 +16,7 @@ function App() {
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
-          <Banner></Banner>
+          
           <Switch>
             <Route path='/home'>
               <Home></Home>
