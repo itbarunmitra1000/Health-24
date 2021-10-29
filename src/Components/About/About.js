@@ -1,12 +1,10 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import './About.css';
 const About = () => {
     return (
         <>
         {/* header component  */}
-        <Header></Header>
+    
         {/* about details  */}
         <div className='about-container'>
            <h1 className='about-header'>About Us</h1>
@@ -15,7 +13,6 @@ const About = () => {
            </p>
         </div>
         {/* footer component */}
-        <Footer></Footer>
         </>
     );
 };

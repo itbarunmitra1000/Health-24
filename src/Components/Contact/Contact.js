@@ -1,13 +1,11 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import './Contact.css';
 
 const Contact = () => {
     return (
         <>
         {/* header component add  */}
-        <Header></Header>
+   
         {/* about details  */}
         <div className='contact-container'>
         <h1 className= 'contact-header' >Contact Us</h1>
@@ -17,7 +15,7 @@ const Contact = () => {
             <h4 className='contact-gmail'>Gmail: example@gmail.com</h4>
         </div>
         {/* footer component add  */}
-        <Footer></Footer>
+       
         </>
     );
 };
