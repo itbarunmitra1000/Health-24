@@ -14,12 +14,13 @@ const Header = () => {
                     <Navbar.Brand to="#home" className="fw-bolder fs-3">Health <span className="text-warning">24</span> </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end ">
-                        <Nav.Link as={Link} className='text-light' to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={Link} className='text-light' to="/services#features">Services</Nav.Link>
-                        <Nav.Link as={Link} className='text-light' to="/patients#pricing">For Patients</Nav.Link>
-                        <Nav.Link as={Link} className='text-light' to="/education#education">Education</Nav.Link>
-                        <Nav.Link as={Link} className='text-light' to="/about#about">About Us</Nav.Link>
-                        <Nav.Link as={Link} className='text-light' to="/contact#contact">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} className='text-light' to="/home">Home</Nav.Link>
+                        <Nav.Link as={Link} className='text-light' to="/services">Services</Nav.Link>
+                        <Nav.Link as={Link} className='text-light' to="/patients">For Patients</Nav.Link>
+
+                        <Nav.Link as={Link} className='text-light' to="/education">Education</Nav.Link>
+                        <Nav.Link as={Link} className='text-light' to="/about">About Us</Nav.Link>
+                        <Nav.Link as={Link} className='text-light' to="/contact">Contact Us</Nav.Link>
                         <Navbar.Text>
                             <span  > {user.displayName} </span>
                         </Navbar.Text>
@@ -38,7 +39,7 @@ const Header = () => {
 
                 </Container>
             </Navbar>
-        
+
         </>
     );
 };

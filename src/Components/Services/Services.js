@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import Service from '../Service/Service';
 import './Services.css';
 const Services = () => {
@@ -10,7 +12,8 @@ const Services = () => {
     }, [])
     return (
         <>
-            <h1>Our Services</h1>
+      
+            <h1 className='mt-5 d-flex justify-content-center'>Our Services</h1>
             <div className='services-container'>
 
                 {
@@ -21,8 +24,10 @@ const Services = () => {
 
                     </Service>)
                 }
+                
 
             </div>
+           
         </>
     );
 };
